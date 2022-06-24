@@ -9,7 +9,7 @@
     <title>Materialize</title>
     </head>
     <body>
-      <br class="container">
+    <div class="container">
         <p>This is a web page used to practice on the Materialize components
           found on the materialize.com
        </p>
@@ -27,10 +27,45 @@
        </div>
        <div class="deep-purple black-text lighten-3"><!--deep-purple lightened -->
          div with color classes,can be used anywhere with all colors
-       </div>
-       <br></br>
+       </div><br></br>
+       <h6><strong> Buttons</strong></h6>
+       <button class="btn">Read More</button><!--ordinary materialize button-->
+       <!-- materialize button with light waves on tapping-->
+       <button class="btn waves-effect waves-light" >waves</button>
+       <!-- materialize button which is large-->
+       <button class="btn btn-large waves-effect waves-light">Large</button>
+      <!-- materialize button which is small-->
+       <button class="btn btn-small waves-effect waves-light">Small</button>
+        <!-- materialize button which is medium-->
+       <button class="btn btn-medium waves-effect waves-light">Medium</button>
+        <!-- materialize button which is disabled-->
+       <button class="btn disabled">Read More</button>
+        <!-- materialize button which is red,black text-->
+       <button class="btn red darken-3 black-text">Read More</button>
+        <!-- materialize button yellow black text-->
+       <button class="btn yellow darken-2 black-text">Read More</button>
+        <!-- materialize button purple white text-->
+        <button class="btn purple darken-2 pink-text">Read More</button>
+         <!-- materialize button purple darken-4 whi-text-->
+       <button class="btn purple darken-4 white-text">Read More</button>
+       <!-- materialize button with icon tag and class material-icons, align left-->
+       <button class="btn btn-large brown left"> <i class="material-icons">cloud</i>Read More</button>
+       <!--Materialize Floating Buttons-->
+       <a href="#" class="btn-floating btn-large red"><i class="large material-icons">add</i></a>
+        <!--flat buttons-->
+        <a href="" class="waves-effect waves-teal btn-flat">flat button</a>
 
-      </div><!--close overall container-->
+       <!--Materialize Fixed Action Buttons-->
+       <div class="fixed-action-btn ">
+         <a href="#" class="btn-floating btn-large red "><i class="large material-icons">mode_edit</i></a>
+         <ul>
+           <li><a href="#" class="btn-floating btn-large yellow"><i class="large material-icons">insert_chart</i></a></li>
+           <li><a href="#" class="btn-floating btn-large blue"><i class="large material-icons">format_quote</i></a></li>
+           <li><a href="#" class="btn-floating btn-large green"><i class="large material-icons">publish</i></a></li>
+           <li><a href="#" class="btn-floating btn-large orange"><i class="large material-icons">attach_file</i></a></li>
+         </ul>
+       </div><br></br>
+    </div><!--close overall container-->
         <!--jquery import before materialize minified js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
