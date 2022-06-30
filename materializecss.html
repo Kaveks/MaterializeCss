@@ -657,7 +657,185 @@
                       </form>
                     </div>
                   </div>
-                
+                  <!--preloders-->
+                  <div class="progress">
+                    <div class="determinate" style="width: 70%"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="indeterminate"></div>
+                  </div>
+                  <h6><strong>Preloaders</strong></h6>
+                  <div class="preloader-wrapper small active">
+                    <div class="spinner-layer spinner-blue-only">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <br></br>
+                <!--grid system-->
+       <!--grid system for page layout-->
+         <h6><strong>Grid system</strong></h6>
+         <p>12 columns</p>
+         <div class="row">
+          <div class="col s1"><div class ="card-panel red lighten-2">1</div></div>
+          <div class="col s1"><div class ="card-panel red lighten-2">2</div></div>
+          <div class="col s1"><div class ="card-panel red lighten-2">3</div></div>
+          <div class="col s1"><div class ="card-panel red lighten-2">4</div></div>
+          <div class="col s1"><div class ="card-panel red lighten-2">5</div></div>
+          <div class="col s1"><div class ="card-panel red lighten-2">6</div></div>
+          <div class="col s1"><div class ="card-panel red lighten-2">7</div></div>
+          <div class="col s1"><div class ="card-panel red lighten-2">8</div></div>
+          <div class="col s1"><div class ="card-panel red lighten-2">9</div></div>
+          <div class="col s1"><div class ="card-panel red lighten-2">10</div></div>
+          <div class="col s1"><div class ="card-panel red lighten-2">11</div></div>
+          <div class="col s1"><div class ="card-panel red lighten-2">12</div></div>
+          </div>
+          </div>
+        </div>
+        <br></br>
+      <div class="container">
+          <p>4 columns</p>
+          <div class="row">
+            <div class="col s3"><div class ="card-panel red lighten-2">1</div></div>
+            <div class="col s3"><div class ="card-panel red lighten-2">2</div></div>
+            <div class="col s3"><div class ="card-panel red lighten-2">3</div></div>
+            <div class="col s3"><div class ="card-panel red lighten-2">4</div></div>
+          </div>
+            <br></br>
+            <!--offset-->
+            <h6><strong>Offsetting</strong></h6>
+            <div class="row">
+              <div class="col s12"><div class="cord-panel red lighten-2">this div is 12 columns</div></div>
+              <div class="col s6 offset-s6"><div class="cord-panel red lighten-2">this div is 6 columns offset by 6</div></div>
+            </div>
+            <!--push and pull-->
+            <h6><strong>Push and pull</strong></h6>
+            <div class="row">
+              <div class="col s7"><div class="card-panel red lighten-2">this div is 7 col wide</div></div>
+              <div class="col s5"><div class="cord-panel red lighten-2">this div is 5 col wide</div></div>
+            </div>
+            <div class="row">
+              <div class="col s7 push-s5"><div class="card-panel red lighten-2">this div is 7 col wide</div></div>
+              <div class="col s5 pull-s7"><div class="cord-panel red lighten-2">this div is 5 col wide</div></div>
+            </div>
+            <h6><strong> navigation and page layout </strong></h6>
+            <!--responsive-->
+          <div class="row">
+            <div class="col s12 m12 l12">
+            <!--menu collapsible bar for even mobiles-->
+              <nav>
+                <div class="nav-wrapper blue ">
+                  <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+                  <!--Enable the mobile bar structure to appear when we tap the menu icon-->
+                  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Create</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><i class="material-icons">search</i></a></li>
+                    <li><a href="#"><i class="material-icons">view_module</i></a></li>
+                    <li><a href="#"><i class="material-icons">refresh</i></a></li>
+                    <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+                  </ul>
+                </div>
+              </nav> 
+              <ul id="slide-out" class="sidenav">
+                <li><div class="user-view">
+                  <div class="background">
+                    <img src="image/pato.jpg">
+                  </div>
+                  <a href="#user"><img class="circle" src="image/pato.jpg"></a>
+                  <a href="#name"><span class="white-text name">Patrick </span></a>
+                  <a href="#email"><span class="white-text email">pkaveks2@gmail.com</span></a>
+                </div></li>
+                <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                <li><a href="#!">Second Link</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">Subheader</a></li>
+                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">create</a></li>
+                <li><a href="#!">login</a></li>
+                <li><a href="#!">about</a></li>
+                <li><a href="#!">contact</a></li>
+              </ul>
+            </div>
+              <div class="col s12 m12 l12"><div class="card-panel grey ">
+                          <p class="flow-text">How the documentation is organized¶
+                            Django has a lot of documentation. A high-level overview of how it’s organized will help you know where to look for certain things:
+                            
+                            Tutorials take you by the hand through a series of steps to create a web application. Start here if you’re new to Django or web application development. Also look at the “First steps”.
+                            Topic guides discuss key topics and concepts at a fairly high level and provide useful background information and explanation.
+                            Reference guides contain technical reference for APIs and other aspects of Django’s machinery. They describe how it works and how to use it but assume that you have a basic understanding of key concepts.
+                            How-to guides are recipes. They guide you through the steps involved in addressing key problems and use-cases. They are more advanced than tutorials and assume some knowledge of how Django works.
+                            The model layer¶
+                            Django provides an abstraction layer (the “models”) for structuring and manipulating the data of your web application. Learn more about it below:
+                            
+                            Models: Introduction to models | Field types | Indexes | Meta options | Model class
+                            QuerySets: Making queries | QuerySet method reference | Lookup expressions
+                            Model instances: Instance methods | Accessing related objects
+                            Migrations: Introduction to Migrations | Operations reference | SchemaEditor | Writing migrations
+                            Advanced: Managers | Raw SQL | Transactions | Aggregation | Search | Custom fields | Multiple databases | Custom lookups | Query Expressions | Conditional Expressions | Database Functions
+                            Other: Supported databases | Legacy databases | Providing initial data | Optimize database access | PostgreSQL specific features
+                            The view layer¶
+                            Django has the concept of “views” to encapsulate the logic responsible for processing a user’s request and for returning the response. Find all you need to know about views via the links below:
+                            
+                            The basics: URLconfs | View functions | Shortcuts | Decorators | Asynchronous Support
+                            Reference: Built-in Views | Request/response objects | TemplateResponse objects
+                            File uploads: Overview | File objects | Storage API | Managing files | Custom storage
+                            Class-based views: Overview | Built-in display views | Built-in editing views | Using mixins | API reference | Flattened index
+                            Advanced: Generating CSV | Generating PDF
+                            Middleware: Overview | Built-in middleware classes
+                            The template layer¶
+                            The template layer provides a designer-friendly syntax for rendering the information to be presented to the user. Learn how this syntax can be used by designers and how it can be extended by programmers:
+                            
+                            The basics: Overview
+                            For designers: Language overview | Built-in tags and filters | Humanization
+                            For programmers: Template API | Custom tags and filters | Custom template backend
+                            Forms¶
+                            Django provides a rich framework to facilitate the creation of forms and the manipulation of form data.
+                            
+                            The basics: Overview | Form API | Built-in fields | Built-in widgets
+                            Advanced: Forms for models | Integrating media | Formsets | Customizing validation
+                            The development process¶
+                            Learn about the various components and tools to help you in the development and testing of Django applications:
+                            
+                            Settings: Overview | Full list of settings
+                            Applications: Overview
+                            Exceptions: Overview
+                            django-admin and manage.py: Overview | Adding custom commands
+                            Testing: Introduction | Writing and running tests | Included testing tools | Advanced topics
+                            Deployment: Overview | WSGI servers | ASGI servers | Deploying static files | Tracking code errors by email | Deployment checklist
+                            The admin¶
+                            Find all you need to know about the automated admin interface, one of Django’s most popular features:
+                            
+                            Admin site
+                            Admin actions
+                            Admin documentation generator
+                            Security¶
+                            Security is a topic of paramount importance in the development of web applications and Django provides multiple protection tools and mechanisms:
+                            
+                            Security overview
+                            Disclosed security issues in Django
+                            Clickjacking protection
+                            Cross Site Request Forgery protection
+                            Cryptographic signing
+                            Security Middleware
+                            Internationalization and localization¶
+                            Django offers a robust internationalization and localization framework to assist you in the development of applications for multiple languages and world regions:
+                            
+                            Overview | Internationalization | Localization | Localized web UI formatting and form input
+                          </p>
+                        </div></div>
+          </div>
+     </div>
     </div><!--close overall container-->
     <div style = "height:500px"></div>
         <!--jquery import before materialize minified js-->
