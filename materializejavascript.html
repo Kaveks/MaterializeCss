@@ -1,0 +1,535 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Materialize javascript</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <!--Carousel which is a slider, push an image and load the next-->
+            <h1>carousel </h1>
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="https://picsum.photos/id/1/300/300"></a>
+                <a class="carousel-item" href="#two!"><img src="https://picsum.photos/id/10/300/300"></a>
+                <a class="carousel-item" href="#three!"><img src="https://picsum.photos/id/1001/300/300"></a>
+                <a class="carousel-item" href="#four!"><img src="https://picsum.photos/id/1005/300/300"></a>
+                <a class="carousel-item" href="#five!"><img src="https://picsum.photos/id/1003/300/300"></a>
+              </div>
+              <!--carousel full slider-->
+              <h1>carousel full slider</h1>
+              <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="https://picsum.photos/id/1/800/400"></a>
+                <a class="carousel-item" href="#two!"><img src="https://picsum.photos/id/10/800/400"></a>
+                <a class="carousel-item" href="#three!"><img src="https://picsum.photos/id/1001/800/400"></a>
+                <a class="carousel-item" href="#four!"><img src="https://picsum.photos/id/1005/800/400"></a>
+                <a class="carousel-item" href="#five!"><img src="https://picsum.photos/id/1003/800/400"></a>
+              </div>
+        </div><!--close carousel container-->
+  <div class="container">
+    <h1>collapsible accordion which is the default</h1>
+      <ul class="collapsible" >
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
+  </div>
+  <div class="container">
+    <h1>collapsible expandable. allow content to expand,no collapse of others</h1>
+      <ul class="collapsible expandable" >
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
+  </div>
+  <div class="container">
+    <h1>collapsible pop out effects</h1>
+    <!--if you need any to open by default  just add class active on div containing header -->
+      <ul class="collapsible popout" >
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
+  </div>
+  <div class="container">
+    <!--toasts-->
+    <h1>Toasts</h1>
+    <a onclick="M.toast({html: 'saved',classes: 'rounded red'},3000)" class="btn ">save!</a>
+
+  </div>
+  <div class="container">
+    <!--tooltips when curser positioned they popout the message-->
+    <h1>Tooltips</h1>
+    <a href="#!" class="btn tooltipped" data-position="top" data-tooltip="I am a tooltip">Hover me</a>
+    <a href="#!" class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me</a>
+    <a href="#!" class="btn tooltipped" data-position="left" data-tooltip="I am a tooltip">Hover me</a>
+    <!--delay the last one by 5 seconds=5000mls-->
+    <a href="#!" class="btn tooltipped" data-position="right" data-tooltip="I am a tooltip">Hover me</a>
+  </div>
+  <div class="container">
+    <!--dropdowns-->
+    <h1>Dropdowns</h1>
+    <a  href='#' class='dropdown-trigger btn pink ' data-target='dropdown1'>Drop Me!<i class="material-icons right">arrow_drop_down</i></a>
+    <!--drop down structure-->
+    <ul id="dropdown1" class="dropdown-content yellow"><!--class dropdown-content hides content first-->
+      <li><a href="#!">Cat toys</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Dries</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Streamers</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Nymphs</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Wets</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Salmons</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Bass Bugs</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Pikes</a></li>
+      <li class="divider"></li>
+      <li><a href="#!"><i class="material-icons">favorite</i>First Link With Icon</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Media</h1>
+    <br></br>
+    <p><strong>material box</strong></p>
+    <!--enlarges and centers an image-->
+    <img class="materialboxed" width="650" data-caption ="Here is the image caption" src="https://picsum.photos/640/360">
+    <br></br>
+    <p><strong>Slider</strong></p>
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="https://placebear.com/640/360"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://placebear.com/640/360"> <!-- random image -->
+          <div class="caption left-align">
+            <h3>Left Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://placebear.com/640/360"> <!-- random image -->
+          <div class="caption right-align">
+            <h3>Right Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://placebear.com/640/360"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+      <br></br>
+    
+  </div><!--close media container-->
+  <div class="container">
+        <!--modals : used as dialog boxes-->
+        <h1>modals</h1>
+          <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal1</a>
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Dis agree</a>
+        </div>
+      </div>
+      <!--modal2-->
+      <a class="waves-effect waves-light btn modal-trigger red" href="#modal2">Modal2</a>
+      <!-- Modal Structure -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text
+            This is supposed to bear full information.I mean a lot of content
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Disagree</a>
+        </div>
+      </div>
+      <br></br>
+      <h6><strong>Modals with button trigger</strong></h6>
+
+      <!-- Modal Trigger -->
+      <button data-target="modal1" class="btn modal-trigger">Modal button</button>
+          <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text
+            This is supposed to bear full information.I mean a lot of content
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Disagree</a>
+        </div>
+      </div>
+      <br></br>
+      <!--modals with fixed footer-->
+      <h6><strong>Modals with fixed footer</strong></h6>
+        <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Modal</a>
+
+      <!-- Modal Structure -->
+      <div id="modal3" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text
+            modal with fixed footer. I would recommend the use of this
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Dis agree</a>
+        </div>
+       </div>
+       <br></br>
+       <!--bottom sheet modals-->
+       <h6><strong>Bottom sheet modals</strong></h6>
+       <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal4">Modal</a>
+
+      <!-- Modal Structure -->
+      <div id="modal4" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text
+            bottom sheet modal
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
+
+  </div>
+    <div class="container">
+      <h1>Sidenav</h1>
+      
+
+      <nav> <!-- navbar content here  --> </nav>
+
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="images/office.jpg">
+          </div>
+          <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        <li><a href="#!">streamers</a></li>
+      </ul>
+      <a href="#!" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
+      <br></br>
+  <!--Sidenav with additional elements-->
+          <h1>Sidenav with additional elements</h1>
+          <nav>   </nav>
+          <ul id="slide-out" class="sidenav">
+            <li><a href="#!">First Sidebar Link</a></li>
+            <li><a href="#!">Second Sidebar Link</a></li>
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li>
+                  <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="#!">First</a></li>
+                      <li><a href="#!">Second</a></li>
+                      <li><a href="#!">Third</a></li>
+                      <li><a href="#!">Fourth</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#!">First Sidebar Link</a></li>
+            <li><a href="#!">Second Sidebar Link</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1.2">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            <ul id='dropdown1.2' class='dropdown-content'>
+              <li><a href="#!">First</a></li>
+              <li><a href="#!">Second</a></li>
+              <li><a href="#!">Third</a></li>
+              <li><a href="#!">Fourth</a></li>
+            </ul>
+          </ul>
+          <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large "><i class="material-icons">menu</i></a>
+    </div><!-- /.sidenav -->
+    <br></br>
+    <div class="container">
+        <!--tabs-->
+        <h1>Tabs</h1>
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs">
+              <li class="tab col s2"><a href="#test1">Test 1</a></li>
+              <li class="tab col s2"><a class="active" href="#test2">Test 2</a></li>
+              <li class="tab col s2 disabled"><a href="#test3">Disabled Tab</a></li>
+              <li class="tab col s2"><a href="#test4">Test 4</a></li>
+              <li class="tab col s2"><a href="#test5">Test 5</a></li>
+              <li class="tab col s2"><a href="#test6">Test 6</a></li>
+            </ul>
+          </div>
+          <div id="test1" class="col s12">Test 1</div>
+          <div id="test2" class="col s12">Test 2</div>
+          <div id="test3" class="col s12">Test 3</div>
+          <div id="test4" class="col s12">Test 4</div>
+          <div id="test5" class="col s12">Test 5</div>
+          <div id="test6" class="col s12">Test 6</div>
+        </div>
+    </div>
+        <br></br>
+
+     <div class="container">
+          <!--Feature Discovery/Tap target-->
+          <h1>Feature Discovery/Tap Target</h1>
+          <!-- Element Showed -->
+          <a id="menu1" onclick="$('.tap-target') .tapTarget('open')" class="waves-effect waves-light btn floating-btn"  ><i class="material-icons">menu</i></a>
+
+          <!-- Tap Target Structure -->
+          <div class="tap-target" data-target="menu1">
+            <div class="tap-target-content">
+              <h5>Title</h5>
+              <p>A bunch of text.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribu
+                  eaque!
+              </p>
+            </div>
+          </div>
+
+          <br></br>
+          <!--scrollspy use it to scroll on a bulky page contents-->
+          <h1>Scrollspy</h1>
+          <div class="row">
+            <div class="col s12 m9 l10">
+              <div id="introduction" class="section scrollspy">
+                <>This is the introductory of the scrollspy which acts as a sided table of content,
+                  while we scroll through this content. lets have some random text.
+                  The Django admin site¶
+                  One of the most powerful parts of Django is the automatic admin interface. It reads 
+                  metadata from your models to provide a quick, model-centric interface where trusted users
+                  can manage content on your site. The admin’s recommended use is limited to an organization’s
+                    internal management tool. It’s not intended for building your entire front end around.
+
+                  The admin has many hooks for customization, but beware of trying to use those hooks exclusively.
+                  If you need to provide a more process-centric interface that abstracts away the implementation
+                    details of database tables and fields, then it’s probably time to write your own views.
+
+                  In this document we discuss how to activate, use, and customize Django’s admin interface.
+
+                  Overview¶
+                  The admin is enabled in the default project template used by startproject.
+
+                  If you’re not using the default project template, here are the requirements:
+
+                  Add 'django.contrib.admin' and its dependencies - django.contrib.auth, django.contrib.
+                  contenttypes, django.contrib.messages, and django.contrib.sessions - to your INSTALLED_APPS
+                  setting.
+                  Configure a DjangoTemplates backend in your TEMPLATES setting with django.template.context
+
+                  _processors.request, django.contrib.auth.context_processors.auth, and django.contrib.messages.
+                  context_processors.messages in the 'context_processors' option of OPTIONS.
+                  If you’ve customized the MIDDLEWARE setting, django.contrib.auth.middleware.AuthenticationMiddleware
+                  and django.contrib.messages.middleware.MessageMiddleware must be included.
+                  Hook the admin’s URLs into your URLconf.
+                  After you’ve taken these steps, you’ll be able to use the admin site by visiting the URL you hooked
+                  it into (/admin/, by default).
+
+                  If you need to create a user to login with, use the createsuperuser command. By default, logging in
+                  to the admin requires that the user has the is_staff attribute set to True.
+
+                  Finally, determine which of your application’s models should be editable in the admin interface. 
+                  For each of those models, register them with the admin as described in ModelAdmin.
+                  </p>
+              </div>
+              <div id="structure" class="section scrollspy">
+                   <p>
+                    The structure of our main message .from django.contrib import admin
+                  from .models import Author
+
+                  @admin.register(Author)
+                  class AuthorAdmin(admin.ModelAdmin):
+                      pass
+                  It’s given one or more model classes to register with the ModelAdmin. If you’re using a
+                  custom AdminSite, pass it using the site keyword argument:
+
+                  from django.contrib import admin
+                  from .models import Author, Editor, Reader
+                  from myproject.admin_site import custom_admin_site
+
+                  @admin.register(Author, Reader, Editor, site=custom_admin_site)
+                  class PersonAdmin(admin.ModelAdmin):
+                      pass
+                  You can’t use this decorator if you have to reference your model admin class in its __init__()
+                  method, e.g. super(PersonAdmin, self).__init__(*args, **kwargs). You can use super().
+                  __init__(*args, **kwargs).
+
+
+                </p>
+              </div>
+              <div id="preamble" class="section scrollspy">
+                <p>
+                   we believe in fancy web app creationsther topics¶Admin actions
+                  The Django admin documentation generator
+                  JavaScript customizations in the admin
+                  See also
+
+                  For information about serving the static files (images, JavaScript, and CSS) associated
+                  with the admin in production, see Serving files.
+
+                  Having problems? Try FAQ: The admin.
+
+                  ModelAdmin objects¶
+                  class ModelAdmin¶
+                  The ModelAdmin class is the representation of a model in the admin interface. Usually,
+                  these are stored in a file named admin.py in your application. Let’s take a look at an
+                    example of the ModelAdmin:
+
+                  from django.contrib import admin
+                  from myapp.models import Author
+
+                  class AuthorAdmin(admin.ModelAdmin):
+                      pass
+                  admin.site.register(Author, AuthorAdmin)
+                  Do you need a ModelAdmin object at all?
+
+                  In the preceding example, the ModelAdmin class doesn’t define any custom values (yet).
+                  As a result, the default admin interface will be provided. If you are happy with the
+                    default admin interface, you don’t need to define a ModelAdmin object at all – you 
+                    can register the model class without providing a ModelAdmin description. 
+                    The preceding example could be simplified to:
+
+                  from django.contrib import admin
+                  from myapp.models import Author
+
+                  admin.site.register(Author)
+                  The register decorator¶
+                  register(*models, site=django.contrib.admin.sites.site)¶
+                  There is also a decorator for registering your ModelAdmin classes:
+                  </p>
+              </div>
+            </div>
+            <div class="col hide-on-small-only m3 l2">
+              <ul class="section table-of-contents">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#structure">Structure</a></li>
+                <li><a href="#preamble">preamble</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <h1>Waves</h1>
+          <p><strong>default color of a button having waves is the green below </strong></p>
+          <!--can be used on any element-->
+         <a class="waves-effect btn-large" href="#!">Wave</a>
+          <br></br>
+          <p><strong>white waves effect add class waves-light </strong></p>
+          <a class="waves-effect waves-light btn-large" href="#!">send</a>
+          <p><strong>red waves </strong></p>
+          <a class="waves-effect waves-red btn-large" href="#!">send</a>
+          <p><strong>orange waves </strong></p>
+          <a class="waves-effect waves-orange btn-large" href="#!">send</a>
+          <p><strong>yellow waves </strong></p>
+          <a class="waves-effect waves-yellow btn-large" href="#!">send</a>
+          <p><strong>Waves on a circular form</strong></p>
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating left red secondary-content">
+            <i class="material-icons">add</i>
+          </a>
+    </div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>  $(document).ready(function(){
+    //init carousel
+    $('.carousel').carousel();
+    //init carousel full slider
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    //init collapsible
+    $('.collapsible').collapsible();
+    //init accordion collapsible default disabled so as to enable expandable
+     var elem = document.querySelector('.collapsible.expandable');
+      var instance = M.Collapsible.init(elem, {
+       accordion: false});
+    //init tooltip
+    $('.tooltipped').tooltip();
+    //init dropdown trigger
+    $('.dropdown-trigger').dropdown();
+    //init materialboxed
+    $('.materialboxed').materialbox();
+    //init Slider
+    $('.slider').slider();
+    //init modal
+    $('.modal').modal();
+    //init sidenav
+    $('.sidenav').sidenav();
+    //init Tabs
+    $('.tabs').tabs();
+    //init feature discovery/tap target
+    $('.tap-target').tapTarget();
+    //init scrollspy
+    $('.scrollspy').scrollSpy();
+     });
+  </script>
+    </body>
+  </html>
